@@ -40,6 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: group-test
+    defaults:
+      run:
+        working-directory: ./example-app
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.11
@@ -62,6 +65,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: group-test
+    defaults:
+      run:
+        working-directory: ./example-app
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.11
@@ -84,6 +90,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: group-test
+    defaults:
+      run:
+        working-directory: ./example-app
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.11
@@ -106,6 +115,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: group-test
+    defaults:
+      run:
+        working-directory: ./example-app
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.11
